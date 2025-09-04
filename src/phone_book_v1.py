@@ -1,9 +1,22 @@
 # Write your solution here
+#command= int(input("command (1 search, 2 add, 3 quit): "))
 def search(phonebook):
-    pass
-
+    name=input("name: ")
+    if name in phonebook:
+         print(phonebook[name])
+    else:
+         print("no number")
+    return
 def add(phonebook):
-    pass
+        name= input("name: ")
+        names=[]
+        names.append(name)
+        number= input("number: ")
+        numbers=[]
+        numbers.append(number)
+        phonebook[name]= number
+        print("ok!")
+        return names, numbers
 
 def main():
     phonebook = {}
